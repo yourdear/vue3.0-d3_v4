@@ -10,6 +10,7 @@
 <script>
     import * as d3 from 'd3';
     export default {
+        name: 'bar',
         data(){
             return{}
         },
