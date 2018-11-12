@@ -32,8 +32,7 @@
         },
          methods: {
             toIndex() {
-                this.$router.push({path:'/Study'})
-              console.log()
+                this.$router.push({path:'/index'})
             }
     }
     }

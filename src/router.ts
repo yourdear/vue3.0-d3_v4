@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Login from './views/Login.vue'
+import Login from './views/common/Login.vue'
 import Common from './views/common/common.vue'
 Vue.use(Router)
 
@@ -13,6 +13,11 @@ export default new Router({
       name: 'login',
       component: Login
     },
+      {
+          path: '/index',
+          name: 'Index',
+          component: () => import('./views/common/Index.vue')
+      },
     {
           path: '/study',
           name: 'Study',
@@ -20,18 +25,18 @@ export default new Router({
           children:[
               {
                 path: '/',
-                name: "Bar",
-                component: () => import("./views/study/D3Bar.vue")
+                name: 'Bar',
+                component: () => import('./views/study/D3Bar.vue')
               },
               {
                   path: '/study/line',
-                  name: "Line",
-                  component: () => import("./views/study/D3Line.vue")
+                  name: 'Line',
+                  component: () => import('./views/study/D3Line.vue')
               },
               {
                   path: '/study/pie',
-                  name: "Pie",
-                  component: () => import("./views/study/D3Pie.vue")
+                  name: 'Pie',
+                  component: () => import('./views/study/D3Pie.vue')
               },
           ]
     }

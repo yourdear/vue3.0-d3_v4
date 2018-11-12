@@ -85,9 +85,9 @@
                 .attr('fill','#666')
             //柱子的信息提示
             chart.append('text')
-                .attr('x',function (item) {
-                    return xscale(item.name)
-                })
+                // .attr('x',function (item) {
+                //     return xscale(item.name)
+                // })
                 .attr('y',function (item) {
                     return yscale(item.value)
                 })

@@ -24,18 +24,10 @@
        position: relative;
        height: 100%;
 
-       #header{
-           position: absolute;
-           left: 255px;
-           right: 0;
-           height: 60px;
-           background: #fff;
-           box-shadow: 0 1px 4px rgba(0, 21, 41, 0.08);
-       }
        #left{
            position: absolute;
            width: 255px;
-           top: 0;
+           top: 60px;
            bottom: 0;
            background: #002140;
            color: #fff;
