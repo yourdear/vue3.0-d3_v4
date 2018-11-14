@@ -2,7 +2,7 @@
     <div id="index">
         <Header></Header>
         <div class="content">
-            万恶的首页
+           ttg的首页
         </div>
 
     </div>
